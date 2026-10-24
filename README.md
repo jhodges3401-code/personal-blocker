@@ -1,2 +1,2 @@
-# personal-blocker
-Personal Blocker - personal-use clean-room MV3 ad/tracker blocker (GPLv3). Not affiliated with uBlock Origin, AdGuard or EasyList.
+# Personal Blocker (clean-room MV3)
+Personal-use ad/tracker blocker. EasyList + EasyPrivacy → declarativeNetRequest via `build/compile.mjs` (112,577 rules in 4 static rulesets; 13,636 generic + 7,999 per-domain cosmetic selector groups). See INSTALL.md, CREDITS.md, build/report.json, build/results-*.json. Tests (in build/, run `npm i` there first): `node yt-unit.mjs`, `node yt-state.mjs ../src`, `node migrate-test.mjs <abs path to src>`, `node yt-check.mjs ../src ext`. License GPLv3-or-later. Not for store publication.
