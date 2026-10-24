@@ -1,0 +1,4 @@
+/* Personal Blocker — Twitch overlay hiding. GPLv3-or-later. Selectors from observed DOM attributes. */
+[data-a-target="video-ad-label"],[data-a-target="video-ad-countdown"],[data-test-selector="sad-overlay"],
+[data-a-target="outstream-ax-overlay"],.stream-display-ad__wrapper,.stream-display-ad,[data-test-selector="ad-banner-default-text"],
+div[aria-label="Ad"],[class*="player-ad-notice"],[data-a-target="ax-overlay"]{display:none!important}
