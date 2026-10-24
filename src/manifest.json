@@ -1,0 +1,56 @@
+{
+  "manifest_version": 3,
+  "name": "Personal Blocker",
+  "version": "0.2.3",
+  "description": "Personal clean-room ad and tracker blocker (EasyList + EasyPrivacy compiled to declarativeNetRequest).",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage",
+    "alarms",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.youtube-nocookie.com/*",
+    "*://*.twitch.tv/*"
+  ],
+  "optional_host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Personal Blocker"
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": [],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "lists_1",
+        "enabled": true,
+        "path": "rules/lists_1.json"
+      },
+      {
+        "id": "lists_2",
+        "enabled": true,
+        "path": "rules/lists_2.json"
+      },
+      {
+        "id": "lists_3",
+        "enabled": true,
+        "path": "rules/lists_3.json"
+      },
+      {
+        "id": "lists_4",
+        "enabled": true,
+        "path": "rules/lists_4.json"
+      }
+    ]
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv7z69mdE9CXzam8cVh/s4+kRll/TEtxotORS5IEzKFytcIsOCyxGtIkLcp+8aDRX/8qlRoccHMn2+PagNxVsHOaSvfYDqh5rnevRnrFdDwQyrWprUSRifZ1PqupifVDY1RwJj4HDhzAL34vWr51mAkcDh4BcYERT0sQH+X+XLKyXKRC7Yu+X7gnQn7vOBeJPPhAG/gC1OtLp4B5N5R2QxsS/m0bVkEdN3p/P/eCExM6V9DI8clCkOVBKigGIvSKnjCT3jIAsc3V1QUq1NpetGQXc2x+wh9JEG4tZY1H2N21eCxr9A86FI3iaBSsU+X/2cwbjYsWTaPnoD/gJF4/wSwIDAQAB"
+}

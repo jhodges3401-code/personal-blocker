@@ -1,0 +1,9 @@
+/* Personal Blocker — YouTube cosmetic hiding. GPLv3-or-later. */
+ytd-ad-slot-renderer,ytd-in-feed-ad-layout-renderer,ytd-promoted-sparkles-web-renderer,ytd-promoted-video-renderer,
+ytd-display-ad-renderer,ytd-banner-promo-renderer,ytd-statement-banner-renderer,ytd-search-pyv-renderer,
+ytd-companion-slot-renderer,ytd-action-companion-ad-renderer,ytd-player-legacy-desktop-watch-ads-renderer,
+#masthead-ad,#player-ads,.ytp-ad-overlay-container,.ytp-ad-image-overlay,.ytd-merch-shelf-renderer,
+ytd-rich-item-renderer:has(> #content > ytd-ad-slot-renderer),ytd-rich-section-renderer:has(ytd-statement-banner-renderer){display:none!important}
+/* in-player ad UI that can flash before the fallback skips it */
+.ytp-ad-overlay-container,.ytp-ad-text-overlay,.ytp-ad-player-overlay-layout__player-card-container,ytd-enforcement-message-view-model,
+ytd-rich-item-renderer:has(ytd-ad-slot-renderer),ytd-item-section-renderer:has(> #contents > ytd-ad-slot-renderer:only-child){display:none!important}
