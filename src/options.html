@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>Personal Blocker options</title><style>body{font:14px system-ui;max-width:700px;margin:20px auto}textarea{width:100%;height:120px}</style>
+<h2>Personal Blocker <span id="ver" style="font-weight:normal;color:#555"></span></h2>
+<h3>Paused sites (one per line)</h3><textarea id="allow"></textarea>
+<h3>Custom block filters (urlFilter syntax, e.g. <code>||ads.example.com^</code>)</h3><textarea id="custom"></textarea>
+<p><label><input type="checkbox" id="cosmetic"> Cosmetic hiding (needs site access)</label></p>
+<p><label><input type="checkbox" id="twitch"> Twitch ad blocking (playlist ad-segment stripping, needs twitch.tv access)</label></p>
+<p><label><input type="checkbox" id="youtube"> YouTube ad blocking (needs youtube.com access)</label></p>
+<button id="save">Save</button> <span id="msg"></span>
+<h3>Credits</h3>
+<p>Filter data: <a href="https://easylist.to/">EasyList and EasyPrivacy</a> by The EasyList authors, dual-licensed GPLv3 / CC BY-SA 3.0. Compiled into this extension by our own compiler. See CREDITS.md.</p>
+<p>Extension code: GPLv3-or-later. Not affiliated with uBlock Origin, AdGuard, or EasyList.</p>
+<script src="options.js"></script>
